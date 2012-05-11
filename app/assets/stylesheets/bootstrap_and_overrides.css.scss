@@ -1,0 +1,259 @@
+// Set the correct sprite paths
+$iconSpritePath: image-path('glyphicons-halflings.png');
+$iconWhiteSpritePath: image-path('glyphicons-halflings-white.png');
+
+$baseFontSize: 14px;
+$baseFontFamily: 'Museo300';
+$navbarBackground: #253349;
+$navbarBackgroundHighlight: #253349;
+$navbarLinkColor: #fff;
+$btnSuccessBackground: #2EB568;
+$linkColor: #5994C8;
+$linkColorHover: #5994C8;
+
+@import "bootstrap";
+
+body { padding:90px 0 40px 0; }
+
+@import "bootstrap-responsive";
+/*----------------------------------------------LAYOUT-------------------------------------------------*/
+
+/*---------------HEADER-NAV---------------*/
+.inner-navbar {
+	padding-left:  20px;
+	padding-right: 20px;
+	@include gradient-vertical($navbarBackgroundHighlight, $navbarBackground);
+}
+
+ul.nav.actions li  { 
+	margin:10px 0 0 0;
+}
+
+ul.nav.actions li a:hover {
+	background: $btnSuccessBackgroundHighlight;
+}
+	
+ul.nav.pages li a {
+	margin:20px 10px 0 0;
+}
+
+ul.nav.pages li a:hover {
+	background: #fff;
+	color: #5994C8;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+}
+
+/*-----------NAV CURRENT STATE----------*/
+.current {
+	text-decoration: underline;
+}
+
+/*---------HERO-UNIT(MAIN BODY)---------*/
+.hero-unit {
+  margin:0 0 30px 0;
+  padding-top: 25px;
+  @include border-radius(6px);
+  
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1;
+    color: #253349;
+    letter-spacing: -1px;
+  }
+  
+  h2 {
+  	color: #253349;
+  }
+  
+  p {
+  	float: left;
+  	margin-bottom: 25px;
+    font-size: 1em;
+    font-weight: 200;
+    line-height: $baseLineHeight * 1.5;
+    color: #444;
+  }
+  
+  .sign-up-btn-home {
+  	text-align: center;
+  }
+}
+
+/*------------------FOOTER------------------*/
+hr.footer-line { 
+	height: 1px;
+	color: #253349;
+	background-color: #253349; 
+}
+ 
+#footer-nav {
+	text-align: center;
+	font-size: 13px;
+	
+		
+	ul {
+		liststyle: none;
+	}
+		
+	li {
+		display: inline;
+		padding-right: 5px;
+	}
+		
+	a, a:visited {
+		color: #aaa;
+		&:hover { color: #253349; }
+		&:active { color: #253349; }
+	}
+}
+
+#copyright {
+	p {
+		color: #aaa;
+		font-size: 13px;
+		text-align: center;
+	}
+}
+	
+#sm-icons {
+	text-align: center;
+		
+	li {
+		display: inline;
+		padding-right: 5px;
+	}
+}		
+
+/*----------------------------------PUBLIC SITE---------------------------------------------------*/
+
+/*-----------------HOME-------------------*/
+.home-info {
+	margin-bottom:30px;
+	text-align: center;
+	
+	p {
+		margin-top: 10px;
+	}
+	
+	img {
+		border: 1px solid #ccc;
+	}
+}
+
+/*-----------------ABOUT-------------------*/
+#team_info {
+	font-size: 14px; 
+	
+	h2 {
+		margin-bottom: 15px; 	
+	}
+	
+	img {
+		float: left;
+		margin:0 15px 15px 0;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border:2px solid #aaa;
+	}
+		
+	h3 {
+		color: #253349;
+		font-weight: lighter;
+		text-decoration: underline;
+	}	
+}
+
+/*-----------------CONTACT-------------------*/
+#contact-section {
+	margin:30px auto;
+	
+	p {
+		margin-top: 20px;
+	}
+}
+
+#form3, #form5 {
+	margin-top:20px; 
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	li {
+		margin:15px 0 0 0;
+	}
+	
+	label {
+		font-weight: lighter;
+	}
+	
+	input.text, input.search, input.file, select.select {
+		font-size: 12px;
+		font-style: italic;
+		color: #333;
+		width: 200px;
+		height: 25px;
+		border: 2px solid #ccc;
+	}
+	
+	textarea.textarea {
+		width:300px;
+		max-width: 350px;
+		height: 200px;
+		font-size: 12px;
+		font-style: italic;
+		color: #333;
+		border: 2px solid #ccc;
+		
+	}
+	
+	.hide {
+		display: none;
+	}
+	
+}
+
+/*----------------------------------MEMBER SITE---------------------------------------------------*/
+
+/*-----------------PROFILE-------------------*/
+.profile-info {
+	margin:10px 0 10px 20px;
+	
+	h2 {
+		text-decoration: underline;
+		color: #5994C8;
+	}
+}
+
+.nav-tabs.nav-stacked > li:last-child {
+	margin-bottom: -20px;
+}
+
+.nav-tabs.nav-stacked > li > a:hover {
+	background: #fff;
+}
+
+/*----------------------------------------MISC----------------------------------------------*/
+
+/*----------------BUTTONS----------------*/
+.btn-xlarge {
+		padding: 15px 80px;
+		font-size: $baseFontSize + 2px;
+		line-height: normal;
+		@include border-radius(5px);
+}
+
+/*----------------ICONS----------------*/
+.icon-cog {
+	background-position: -432px 0;
+}
+
+
+
+
