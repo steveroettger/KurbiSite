@@ -12,7 +12,7 @@ development:
 test:
   adapter: mysql2
   pool: 5
-  host: 
+  host: mysql2://9e57ec4fbe3373:395376a9@us-cdbr-east.cleardb.com/heroku_ce4f2e5df38486a?reconnect=true 
   username: 
   password: 
   database: heroku_ce4f2e5df38486a
@@ -20,7 +20,7 @@ test:
 production:
   adapter: mysql2
   pool: 5
-  host:
+  host: mysql2://9e57ec4fbe3373:395376a9@us-cdbr-east.cleardb.com/heroku_ce4f2e5df38486a?reconnect=true
   username: 
   password: 
   database: heroku_ce4f2e5df38486a
